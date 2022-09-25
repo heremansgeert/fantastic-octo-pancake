@@ -1,13 +1,7 @@
 # Welcome
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
-{% highlight csharp %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+```csharp
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
